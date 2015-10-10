@@ -7,3 +7,7 @@ URI parsing workflow for Alfred
 * On Alfred, type **uri**
 * Press ENTER to copy the segment of the URI
 
+
+###Installation and Download
+
+http://dkulkarni.github.io/alfred-uri-parser/
