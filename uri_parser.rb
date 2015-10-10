@@ -5,7 +5,12 @@ query = `pbpaste`
 xml_string = "<?xml version=\"1.0\"?>\n<items>\n"
 
 begin
-	url = URI(query)
+	link = query
+        unless link[/\Ahttp:\/\//] || link[/\Ahttps:\/\//]
+            link = "http://#{link}"
+        end
+    
+	url = URI(link)
 	host = url.host
 	port = url.port
 	path = url.path
